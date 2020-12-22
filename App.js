@@ -7,11 +7,10 @@ import { enableScreens } from 'react-native-screens';
 
 import MealNavigator from './navigation/MealsNavigator';
 
-// enableScreens();
+enableScreens();
 
 const fetchFonts = () => {
-  Font.loadAsync({
-    
+  return Font.loadAsync({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
   });
